@@ -1,7 +1,44 @@
+.todo-container {
+	padding: 1rem .5rem;
+	width: clamp(12.5rem, 100%, 37.5rem);
+	margin: 0 auto;
+}
+
+.todo-header {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.todo-section {
+	margin-bottom: 1rem;
+}
+
 .todo-form {
 	display: flex;
+	gap: 1rem;
 }
 
 .todo-form__input {
+	flex: 1;
+}
+
+.todo-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.todo-item {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding: .5rem 0;
+}
+
+.todo-item:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+}
+
+.todo-item__label {
 	flex: 1;
 }

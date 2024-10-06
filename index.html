@@ -12,23 +12,32 @@
   <link href="./assets/styles/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Todo App Built with jQuery</h1>
-    <div>
+  <div class="todo-container">
+    <h1 class="todo-header">Todo App Built with jQuery</h1>
+    <section class="todo-section">
       <form class="todo-form" data-form>
-        <input class="form-control todo-form__input" type="text" placeholder="Write task...">
-        <button type="submit" class="btn btn-primary todo-form__submit">Primary</button>
+        <input 
+          class="form-control todo-form__input" 
+          type="text" 
+          placeholder="Write task..."
+          data-input
+        >
+        <button 
+          type="submit" 
+          class="btn btn-primary todo-form__submit"
+          data-submit
+        >Primary</button>
       </form>
-    </div>
-    <div>
-      <ul>
-        <li>
-          <input class="form-check-input" type="checkbox" value="" id="firstCheckbox">
-          <label class="form-check-label" for="firstCheckbox">First checkbox</label>
-          <button class="btn btn-danger">Delete</button>
+    </section>
+    <section>
+      <ul class="todo-list">
+        <li class="todo-item">
+          <input class="todo-item__checkbox form-check-input" type="checkbox" value="" id="firstCheckbox">
+          <label class="todo-item__label form-check-label" for="firstCheckbox">First checkbox</label>
+          <button class="todo-item__delete-btn btn btn-danger btn-sm">Delete</button>
         </li>
       </ul>
-    </div>
+    </section>
   </div>
 </body>
 </html>
