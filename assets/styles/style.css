@@ -1,0 +1,7 @@
+.todo-form {
+	display: flex;
+}
+
+.todo-form__input {
+	flex: 1;
+}
