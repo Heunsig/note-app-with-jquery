@@ -35,6 +35,10 @@
 	padding: .5rem 0;
 }
 
+.todo-item.completed .todo-item__label{
+	text-decoration: line-through;
+}
+
 .todo-item:not(:last-child) {
 	border-bottom: 1px solid #ccc;
 }
