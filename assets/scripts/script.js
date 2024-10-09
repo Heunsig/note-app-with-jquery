@@ -37,8 +37,9 @@ $(document).ready(function() {
   const todoList = $('[data-todo-list]')
   const input = $('[data-input]');
   const empty = $('[data-empty]');
+  const form = $('[data-form]');
 
-  $('[data-form]').submit(e => {
+  form.submit(e => {
     e.preventDefault();
 
     const value = input.val();
