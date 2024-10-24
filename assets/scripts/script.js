@@ -2,7 +2,7 @@ function createTodoItem(value) {
   const noteItemContent = $("<div/>", {
     class: 'note-item__content',
     text: value
-  })
+  });
 
   const noteItem = $("<li/>", {
     class: 'note-item',
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
   const form = $('[data-form]');
   const input = $('[data-input]');
-  const noteList = $('[data-note-list]')
+  const noteList = $('[data-note-list]');
   const noteCount = $('[data-note-count]');
 
   form.submit(e => {
