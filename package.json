@@ -16,5 +16,8 @@
   "stackblitz": {
     "installDependencies": true,
     "startCommand": "npm dev"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
