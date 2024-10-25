@@ -14,6 +14,7 @@ function createTodoItem(value) {
 }
 
 $(document).ready(function() {
+  console.log('hihi22')
   const notes = [];
 
   const form = $('[data-form]');

@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "live-server --watch=index.html,./assets/**/*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "url-join": "^4.0.1",
+    "whatwg-encoding": "^2.0.0"
+  },
+  "description": "",
+  "stackblitz": {
+    "installDependencies": true,
+    "startCommand": "npm dev"
+  }
 }
