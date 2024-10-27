@@ -16,17 +16,17 @@
     <h1 class="note-header">Note App (jQuery)</h1>
     <!-- Form 섹션 -->
     <section class="note-section">
-      <form class="note-form" data-form>
+      <form class="note-form" id="form">
         <input 
           class="form-control note-form__input" 
           type="text" 
           placeholder="Write task..."
-          data-input
+          id="input"
         >
         <button 
           type="submit" 
           class="btn btn-primary note-form__submit"
-          data-submit
+          id="submit-btn"
         >Add</button>
       </form>
     </section>
@@ -35,9 +35,9 @@
     <!-- Note 리스트 섹션 -->
     <section>
       <div class="note-counter">
-        <span data-note-count>0</span>개의 메모가 있습니다.
+        <span id="note-count">0</span>개의 메모가 있습니다.
       </div>
-      <ul class="note-list" data-note-list>
+      <ul class="note-list" id="note-list">
         <!-- data-note 위치 -->
       </ul>
     </section>

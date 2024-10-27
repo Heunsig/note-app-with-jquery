@@ -7,7 +7,6 @@ function createNoteItem(value) {
   const noteItem = $("<li/>", {
     class: 'note-item',
   })
-  .attr('data-note', '')
   .append(noteItemContent);
 
   return noteItem;
@@ -16,10 +15,10 @@ function createNoteItem(value) {
 $(document).ready(function() {
   const notes = [];
 
-  const form = $('[data-form]');
-  const input = $('[data-input]');
-  const noteList = $('[data-note-list]');
-  const noteCount = $('[data-note-count]');
+  const form = $('#form');
+  const input = $('#input');
+  const noteList = $('#note-list');
+  const noteCount = $('#note-count');
 
   form.submit(e => {
     e.preventDefault();
